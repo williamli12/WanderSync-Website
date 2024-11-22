@@ -41,3 +41,25 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.screenshots {
+    display: flex;
+    flex-wrap: wrap; /* Wrap images to the next row if they exceed the container width */
+    justify-content: center; /* Center images horizontally */
+    gap: 20px; /* Add space between images */
+    padding: 20px; /* Add padding around the container */
+}
+
+.screenshots img {
+    max-width: 300px; /* Limit the width of each screenshot */
+    width: 100%; /* Ensure responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.screenshots img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Increase shadow depth on hover */
+}
